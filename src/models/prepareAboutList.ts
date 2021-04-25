@@ -1,4 +1,4 @@
-import { rawListItem } from '@/models/dataExample';
+import { rawListItem } from '@/models/data';
 
 export interface aboutListItem {
   id: number,

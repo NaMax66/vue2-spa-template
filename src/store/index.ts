@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import dataTpl from '@/models/dataExample'
+import { rowList } from '@/models/data'
 
 Vue.use(Vuex);
 
@@ -14,11 +14,11 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    fetchList({ commit }, params: { mail: string, password: string }): Promise<void> {
+    fetchList({ commit }, params: { mail: string, password: string | number }): Promise<void> {
       return new Promise<void>((resolve) => {
         console.log(params)
         setTimeout(() => {
-          commit('setList', dataTpl)
+          commit('setList', rowList)
           resolve();
         }, 400)
       })

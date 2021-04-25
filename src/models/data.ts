@@ -5,7 +5,7 @@ export interface rawListItem {
 }
 
 // данные с бекенда
-const array: rawListItem[] = [
+export const rowList: rawListItem[] = [
   {
     id: 1,
     name: 'Test'
@@ -15,5 +15,3 @@ const array: rawListItem[] = [
     name: 'Boo'
   }
 ]
-
-export default array
