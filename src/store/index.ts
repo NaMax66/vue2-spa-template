@@ -19,7 +19,7 @@ export default new Vuex.Store({
         console.log(params)
         setTimeout(() => {
           commit('setList', rowList)
-          resolve();
+          resolve()
         }, 400)
       })
     }

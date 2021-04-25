@@ -16,7 +16,7 @@ export default Vue.extend({
   methods: {
     ...mapActions(['fetchList']),
     onActionButton() {
-      this.fetchList({ mail: 'test@tets.ru', password: 123 });
+      this.fetchList({ mail: 'test@tets.ru', password: 123 })
     }
   },
   computed: {
