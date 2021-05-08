@@ -1,16 +1,20 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import { rowList } from '@/models/data'
+import { rawListItem, rowList } from '@/models/data';
 
 Vue.use(Vuex);
 
-export default new Vuex.Store({
+interface State {
+  list: rawListItem[]
+}
+
+export default new Vuex.Store<State>({
   state: {
     list: []
   },
   mutations: {
     setList(state, list) {
-      state.list = list
+      state.list = list as rawListItem[]
     }
   },
   actions: {
