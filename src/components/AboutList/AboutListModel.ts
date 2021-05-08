@@ -5,7 +5,7 @@ export interface aboutListItem {
   title: string
 }
 
-export default class AboutList {
+export default class AboutListModel {
   static prepare(list: rawListItem[]): aboutListItem[] {
     return list.map((el: rawListItem) => ({
       id: el.id,
