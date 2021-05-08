@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import AboutList from './AboutList';
+import AboutListModel from './AboutListModel';
 
 export default {
   name: 'AboutList',
@@ -17,7 +17,7 @@ export default {
   },
   computed: {
     aboutList() {
-      return AboutList.prepare(this.list)
+      return AboutListModel.prepare(this.list)
     }
   }
 }

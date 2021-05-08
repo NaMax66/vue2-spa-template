@@ -7,7 +7,7 @@
 </template>
 <script>
 import BaseButton from '@/components/base/BaseButton.vue'
-import AboutList from '@/components/AboutList/AboutList.vue'
+import AboutListModel from '@/components/AboutList/AboutList.vue'
 
 import { mapState, mapActions } from 'vuex'
 import Vue from 'vue';
@@ -20,7 +20,7 @@ export default Vue.extend({
   methods: {
     ...mapActions(['fetchList']),
     onActionButton() {
-      this.fetchList({ mail: 'test@tets.ru', password: 123 });
+      this.fetchList({ mail: 'test@tets.ru', password: 123 })
     }
   },
   computed: {
